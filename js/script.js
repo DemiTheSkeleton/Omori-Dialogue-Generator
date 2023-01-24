@@ -66,5 +66,5 @@ function displayPortrait(event, identifier) {
 
 function displayDownload(identifier) {
   let downloadButton = document.getElementById(identifier);
-  downloadButton.style.display = 'block';
+  downloadButton.style.display = 'inline-block';
 };

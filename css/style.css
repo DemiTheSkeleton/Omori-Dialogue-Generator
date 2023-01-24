@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: "OMORI_MAIN";
     src: url("fonts/OMORI_GAME.ttf") format("truetype-variations");
@@ -13,6 +19,8 @@ body {
     color: white;
     font-family: 'OMORI_MAIN';
     font-size: 28px;
+    display: grid;
+    justify-content: center;
 }
 
 h1 {
@@ -31,6 +39,7 @@ input, textarea {
 ol {
     margin-top: 0;
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 ul {
@@ -45,29 +54,34 @@ canvas {
 
 a {
     color: white;
+    display: flex;
+    display: inline-block;
 }
 
 /* Sections */
 
 #info-box {
-    padding: 5px 10px;
+    padding: 5px 0;
     font-size: 22px;
     display: block;
-    width: 400px;
+    width: 608px;
 }
 
 #toggle-box-info {
     display: none;
 }
 
+#toggle-link-info {
+    margin: 10px;
+}
+
 #info-seperator {
     width: 608px;
-    margin-left: 0;
+    justify-content: center;
 }
 
 .speech-frame {
     width: 608px;
-    display: grid;
 }
 
 .wrap-white {
@@ -98,24 +112,6 @@ a {
 
 /*******/
 
-.top-half {
-    height: 124px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    display: grid;
-}
-
-.char-name-wrapper {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    height: 44px;
-    display: grid;
-    justify-content: left;
-    align-self: flex-end;
-    padding-bottom: 4px;
-}
-
 .char-name {
     padding-left: 8px;
     padding-right: 8px;
@@ -125,12 +121,7 @@ a {
 }
 
 .char-pic-wrapper {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    display: grid;
-    justify-content: right;
-    align-content: flex-end;
-    padding-bottom: 4px;
+    display: contents;
 }
 
 .char-pic {
@@ -152,35 +143,15 @@ a {
 
 
 /*******/
-
-.bottom-half {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-
-.wrap-black .dialogue-box {
-    width: 584px;
-    height: 96px;
-}
-
-.dialogue-box {
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-top: 7px;
-    line-height: 30px;
-    height: 95px !important;
-    overflow: hidden;
-    resize: none;
-    margin: 0;
-}
-
-/*******/
 .images img {
     display: none;
 }
 
 .download {
     display: none;
+}
+
+
+#title {
+    text-align: center;
 }
