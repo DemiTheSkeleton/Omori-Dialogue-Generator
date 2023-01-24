@@ -18,10 +18,10 @@ function togglePortrait(idCheckbox, idPortrait) {
 
   if (checkbox.checked) {
     image.parentElement.style.visibility = 'visible'; // The black border
-    image.style.visibility = 'visible'; // The image itself
+    image.style.display = 'inherit'; // The image itself
   } else {
     image.parentElement.style.visibility = 'hidden'; // The black border
-    image.style.visibility = 'hidden'; // The image itself
+    image.style.display = 'none'; // The image itself
   }
 };
 
