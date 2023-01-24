@@ -133,10 +133,8 @@ a {
 /* DO NOT TOUCH THIS FOR POSITIONING */
 .char-pic-button {
     position: absolute;
-    margin-top: 3px;
-    margin-left: 3px;
-    width: 106px;
-    height: 106px;
+    width: 103px;
+    height: 103px;
     opacity: 0;
     /* border-style: hidden; */
 }
