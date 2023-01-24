@@ -110,13 +110,13 @@ a {
   grid-row-start: 1;
 }
 
+/* .input-and-results {
+    display: grid;
+} */
+
 /*******/
 
 .char-name {
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 0;
     width: 237px;
 }
 
@@ -139,6 +139,12 @@ a {
     /* border-style: hidden; */
 }
 
+.typable {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
 
 /*******/
 .images img {
