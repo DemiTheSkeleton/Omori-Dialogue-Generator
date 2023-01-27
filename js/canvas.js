@@ -37,7 +37,7 @@ function renderCanvas(idFrame, idDownload) {
 
 
   // Load character name details
-  let charName = document.getElementsByClassName("char-name")[0].value;
+  let charName = document.getElementsByClassName("char-name")[0].textContent;
   ctx.font = "28px OMORI_MAIN";
 
   // Load character name box

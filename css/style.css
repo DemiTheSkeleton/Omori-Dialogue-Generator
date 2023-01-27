@@ -116,10 +116,6 @@ a {
 
 /*******/
 
-.char-name {
-    width: 237px;
-}
-
 .char-pic-wrapper {
     display: contents;
 }
@@ -144,6 +140,10 @@ a {
     padding-right: 8px;
     padding-bottom: 5px;
     padding-top: 0;
+}
+
+.input-wrapper {
+    display: flex;
 }
 
 /*******/
