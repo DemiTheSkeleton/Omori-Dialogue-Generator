@@ -1,107 +1,97 @@
+/* Rule resetting ***/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*** Font imports ***/
+
 @font-face {
-    font-family: "OMORI_MAIN";
-    src: url("fonts/OMORI_GAME.ttf") format("truetype-variations");
+  font-family: "OMORI_MAIN";
+  src: url("fonts/OMORI_GAME.ttf") format("truetype-variations");
 }
 
 @font-face {
-    font-family: "OMORI_DISTURBED";
-    src: url("fonts/OMORI_GAME2.ttf") format("truetype-variations");
+  font-family: "OMORI_DISTURBED";
+  src: url("fonts/OMORI_GAME2.ttf") format("truetype-variations");
 }
+
+/*** General element styling ***/
 
 body {
-    background-color: grey;
-    color: white;
-    font-family: 'OMORI_MAIN';
-    font-size: 28px;
-    display: grid;
-    justify-content: center;
+  background-color: grey;
+  color: white;
+  font-family: "OMORI_MAIN";
+  font-size: 28px;
+  display: grid;
+  justify-content: center;
 }
 
 h1 {
-    font-family: 'OMORI_MAIN', Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 60px;
-    margin: 0.5vw;
+  font-family: "OMORI_MAIN", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  margin: 0.5vw;
 }
 
-input, textarea {
-    font-family: inherit;
-    font-size: inherit;
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 ol {
-    margin-top: 0;
-    margin-right: 10px;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
 ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-
 canvas {
-    display: none;
-    margin: 10px 0;
+  display: none;
+  margin: 10px 0;
 }
 
 a {
-    color: white;
-    display: flex;
-    display: inline-block;
+  color: white;
+  display: flex;
+  display: inline-block;
 }
 
-/* Sections */
+/*** Main Sections ***/
 
+/** Header **/
+#title {
+  text-align: center;
+}
+
+/** Information **/
 #info-box {
-    padding: 5px 0;
-    font-size: 22px;
-    display: block;
-    width: 608px;
+  padding: 5px 0;
+  font-size: 22px;
+  display: block;
+  width: 608px;
 }
 
 #toggle-box-info {
-    display: none;
+  display: none;
 }
 
 #toggle-link-info {
-    margin: 10px;
+  margin: 10px;
 }
 
 #info-seperator {
-    width: 608px;
-    justify-content: center;
+  width: 608px;
+  justify-content: center;
 }
 
-.speech-frame {
-    width: 608px;
-}
-
-.wrap-white {
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    display: inline-flex;
-}
-
-.wrap-black {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    display: inline-flex;
-}
-
-.box {
-    background-color: black;
-    color: white;
-}
+/** Input and results **/
 
 .settings {
   font-size: 20px;
@@ -110,52 +100,66 @@ a {
   grid-row-start: 1;
 }
 
-/* .input-and-results {
-    display: grid;
-} */
+.speech-frame {
+  width: 608px;
+}
 
-/*******/
+.wrap-white {
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  display: inline-flex;
+}
+
+.wrap-black {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-flex;
+}
+
+.box {
+  background-color: black;
+  color: white;
+}
+
+/* Input eleements */
 
 .char-pic-wrapper {
-    display: contents;
+  display: contents;
 }
 
 .char-pic {
-    width: 104px;
-    height: 104px;
-    padding: 1px;
+  width: 104px;
+  height: 104px;
+  padding: 1px;
 }
 
 /* DO NOT TOUCH THIS FOR POSITIONING */
 .char-pic-button {
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    opacity: 0;
-    /* border-style: hidden; */
+  position: absolute;
+  width: 103px;
+  height: 103px;
+  opacity: 0;
+  /* border-style: hidden; */
 }
 
 .typable {
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-top: 0;
 }
 
 .input-wrapper {
-    display: flex;
+  display: flex;
 }
 
-/*******/
+/* Output rendering */
 .images img {
-    display: none;
+  display: none;
 }
 
 .download {
-    display: none;
-}
-
-
-#title {
-    text-align: center;
+  display: none;
 }

@@ -71,7 +71,7 @@
     </div>
   </div>
   <hr id="info-seperator">
-
+  <!-- Settings -->
   <form id="frame_0" class="speech-frame">
     <div class="settings">
       <table>
@@ -97,8 +97,9 @@
         </tr>
       </table>
     </div>
-
+    <!-- Input and Results -->
     <div class="input-and-results">
+      <!-- Portrait -->
       <div class="input-wrapper">
         <div class="wrap-black">
           <img id="char_img_0"
@@ -108,24 +109,19 @@
             onchange="displayPortrait(event, 'char_img_0')" accept="image/*">
         </div>
       </div>
-
+      <!-- Character Name -->
       <div class="input-wrapper">
         <div class="wrap-black">
-          <!-- <input id="char_name_0" 
-            onkeydown="this.style.width = 0; this.style.width = this.scrollWidth * 1.03 + 11 + 'px'; return event.key != 'Enter';" type="text"
-            name="Character Name" value="<character name>" class="wrap-white char-name box typable"> -->
-          <!-- Okay, I got lazy here with the inline JS -->
           <span contenteditable="true" id="char_name_0" class="wrap-white box char-name typable">[character name]</span>
         </div>
-        
       </div>
-
+      <!-- Dialogue -->
       <div class="input-wrapper">
-        <div class="wrap-black" >
+        <div class="wrap-black">
           <textarea id='dialogue_0' class="dialogue-box wrap-white box typable">[dialogue]</textarea>
         </div>
       </div>
-
+      <!-- Render -->
       <input type="button" name="render" value="Render! (output will appear below)"
         onclick="renderCanvas('frame_0', 'download_0'); displayDownload('download_0')">
       <canvas id="output_0" width="608" height="230"></canvas>
